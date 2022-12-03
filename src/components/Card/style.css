@@ -1,0 +1,76 @@
+@media screen and (min-width: 750px) {
+    .cardContainer {
+        background-color: #C697E2;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .containerLabel {
+        width: 80%;
+        margin: 10px;
+        height: 20px;
+        display: flex;
+    }
+    .cardLabel {
+        width: 30%;
+        margin-left: 10px;
+        margin-top: 5px;
+        color: white;
+    }
+
+    .containerValue {
+        margin: 10px;
+        padding-left: 10px;
+        background-color: #C697E2;
+        border-radius: 15px;
+        display: flex;
+    }
+    .cardValue {
+        width: 15%;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        color: rgb(36, 34, 34);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .cardContainer {
+        background-color: #C697E2;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+    }
+    
+    .containerLabel {
+        margin: 10px;
+        height: 30%;
+        width: 40%;
+        font-weight: 20%;
+    }
+    .cardLabel {
+        width: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+        color: white;
+    }
+    
+    .containerValue {
+        margin: 10px;
+        height: 30%;
+        width: 20%;
+        font-weight: 20%;
+    }
+    .cardValue {
+        display: flex;
+        width: 15%;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        color: rgb(39, 37, 37);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
