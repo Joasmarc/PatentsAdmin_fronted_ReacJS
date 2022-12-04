@@ -1,13 +1,13 @@
 .containerButton {
-    padding: 20;
+    padding: 10;
     width: 50;
     height: 50;
+    margin-bottom: 8px;
 }
 .buttonComponente {
-    background-color: #7433FF;
+    /* background-color: #39216c; */
     border: none;
     border-radius: 70px;
-    width: 195px;
     height: 43px;
     left: 464px;
     box-shadow: -2px 2px
@@ -20,4 +20,5 @@
 }
 .textButton {
     color: whitesmoke;
+    font-size: 18px;
 }
