@@ -17,10 +17,6 @@ function App() {
         setPatients(response);
     }
 
-    const createPatient = async(patient)=>{
-        console.log(patient);
-    }
-    
     useEffect(() => {
         getPatients();
     }, [])
@@ -43,18 +39,11 @@ function App() {
                         />
                     }
                     <div>
-                        {/* {
-                            patients.map((patient) => {
-                                return(
-                                    <Card name={patient.name} last_name={patient.last_name} type_id={patient.type_id} id={patient.id} sex={patient.sex} key={patient.id} />
-                                )
-                            })
-                        } */}
                         {
                             (patients.length >= 1) ? 
                             patients.map((patient) => {
                                 return(
-                                    <Card name={patient.name} last_name={patient.last_name} type_id={patient.type_id} id={patient.id} sex={patient.sex} key={patient.id} />
+                                    <Card setStatus={setPatients} status={patients} patient={patient} key={patient.id} />
                                 )
                             })
                             :
