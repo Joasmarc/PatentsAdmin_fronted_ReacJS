@@ -34,8 +34,10 @@ function App() {
                         <Form
                         cancelAction={()=> setCreating(false)}
                         urlServer="create"
-                        setStatus={setPatients}
-                        status={patients}
+                        refreshAction={getPatients}
+                        // setStatus={setPatients}
+                        // status={patients}
+                        color={'rgb(74, 40, 208)'}
                         />
                     }
                     <div>
@@ -43,11 +45,11 @@ function App() {
                             (patients.length >= 1) ? 
                             patients.map((patient) => {
                                 return(
-                                    <Card setStatus={setPatients} status={patients} patient={patient} key={patient.id} />
+                                    <Card refreshAction={getPatients} setStatus={setPatients} status={patients} patient={patient} key={patient.id} />
                                 )
                             })
                             :
-                            <h3>Por los momento no hay paciente.</h3>
+                            <h3>Por los momento no hay pacientes😅.</h3>
                         }
                     </div>
                 </div>

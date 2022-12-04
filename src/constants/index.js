@@ -4,5 +4,11 @@ export const gender = {
     "other" : "OTROS",
 };
 
-export const transforTypeId = [null,'CC','Pasaporte', 'Cedula extranjeria', 'NIT'];
-export const tranformGenderId = [null,'male','female', 'other'];
+export const transform_sex = {
+    male: 1,
+    female: 2,
+    other: 3,
+    1: 'male',
+    2: 'female',
+    3: 'other',
+}
