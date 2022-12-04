@@ -8,8 +8,6 @@ import './style.css'
 function App() {
 
     const [patients, setPatients] = useState([]);
-
-    // const [editing, setEditing] = useState(false);
     const [creating, setCreating] = useState(false);
 
     const getPatients = async() =>{
@@ -35,8 +33,6 @@ function App() {
                         cancelAction={()=> setCreating(false)}
                         urlServer="create"
                         refreshAction={getPatients}
-                        // setStatus={setPatients}
-                        // status={patients}
                         color={'rgb(74, 40, 208)'}
                         />
                     }

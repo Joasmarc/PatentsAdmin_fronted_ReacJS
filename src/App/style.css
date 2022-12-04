@@ -21,6 +21,7 @@
     padding: 15px;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
 }
 .buttonComponente {
     margin: 0px 10px 0px 10px;
